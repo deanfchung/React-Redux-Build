@@ -5,9 +5,10 @@
    "main": "./src/index.jsx",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "serve": "cross-env NODE_ENV=development webpack-dev-server --hot",
+      "start": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
       "build": "cross-env NODE_ENV=production node server/server.js & NODE_ENV=production webpack",
-      "dev": "cross-env NODE_ENV=development nodemon server/server.js & NODE_ENV=development webpack-dev-server --open --hot"
+      "dev": "cross-env NODE_ENV=development nodemon server/server.js & NODE_ENV=development webpack-dev-server --open --hot",
+      "serve": "nodemon server/server.js"
    },
    "repository": {
       "type": "git",
