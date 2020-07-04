@@ -1,5 +1,4 @@
 import React from 'react';
-import variables from '../stylesheets/_variables.scss'
 
 
 const App = () => {
