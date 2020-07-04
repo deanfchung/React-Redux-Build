@@ -1,17 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 import reducers from './reducers';
-import App from './components/App.jsx';
-import './stylesheets/application.scss';
+import App from './components/App';
+import './stylesheets/styles.scss';
 
 const store = createStore(reducers, composeWithDevTools(applyMiddleware(thunk)));
 
-ReactDOM.render(
+render(
   <Provider store={store}>
     <App />
   </Provider>,
