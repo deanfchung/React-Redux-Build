@@ -1,8 +1,8 @@
-import * as types from './types'
+import * as constants from '../constants'
 
 export const dummyAction = (payload) => {
-   return {
-      type: types.DUMMY_ACTION, //required
-      payload, //optional
-   }
+	return {
+		type: constants.DUMMY_ACTION,
+		payload
+	}
 }
