@@ -1,1 +1,5 @@
-export const DUMMY_ACTION = 'DUMMY_ACTION'
+import * as main from './main';
+
+export default {
+	...main
+};

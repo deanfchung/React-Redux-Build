@@ -1,8 +1,5 @@
-import * as constants from '../constants'
+import * as main from './main';
 
-export const dummyAction = (payload) => {
-	return {
-		type: constants.DUMMY_ACTION,
-		payload
-	}
-}
+export default {
+	...main
+};
